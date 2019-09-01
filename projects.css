@@ -1,0 +1,89 @@
+.project {
+    height: 500px;
+}
+
+/* RON DIGAO*/
+.project1 {
+    background: url(images/ron3v.JPG) no-repeat 50% 50%;
+    background-size: cover;
+    left: 40%;
+}
+
+.project1::after {
+  
+    content: "Ron Digao";
+    font-family: "Roboto Mono";
+    font-size: 36px;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 8%;
+    left: -17%;
+    right: 0;
+    bottom: 0;
+}
+
+/* Advance.Sweden */
+.project2 {
+   
+    background: url(images/john6.JPG) no-repeat 50% 40%;
+  
+    background-size: cover;
+    left: 5%;
+    color: #bbb;
+}
+
+.project2::after {
+    content: "Advance.sweden";
+    font-family: "Roboto Mono";
+    font-size: 36px;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 60%;
+    left: 95%;
+    right: 0;
+    bottom: 0;
+}
+
+
+/* Indonesia */
+.project3 {
+    background: url(images/indo1.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    color: #444;
+}
+
+.project3::after {
+    content: "Indonesia";
+    font-family: "Roboto Mono";
+    font-size: 36px;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 70%;
+    left: -20%;
+    right: 0;
+    bottom: 0;
+}
+
+/* MUMBAI */
+.project4 {
+    background: url(images/Mumbai/peeinmiants.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    color: #ccc;
+}
+
+.project4::after {
+    
+    content: "Mumbai";
+    font-family: "Roboto Mono";
+    font-size: 36px;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 10%;
+    left: 90%;
+    right: 0;
+    bottom: 0;
+}

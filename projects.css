@@ -87,3 +87,20 @@
     right: 0;
     bottom: 0;
 }
+
+@media(max-width: 768px) {
+    .project {
+          width: 90% !important;
+          margin: 14px auto;
+          left: 0;
+          right: 0;
+    }
+
+    .vertical {
+          display: none;
+    }
+
+    .project1::after, .project2::after, .project3::after, .project4::after {
+          display: none;
+    }
+}

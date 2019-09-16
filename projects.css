@@ -1,16 +1,35 @@
+
+.selected-projects {
+    width: 96%;
+    overflow: hidden;
+    padding: 0 2% 0 2%;
+
+}
+
 .project {
     height: 500px;
+    position: relative;
+    width: 70vw;
+    background-size: cover;
+    margin: 0 0 40px 0;
+}
+
+.project p {
+    position: absolute;
+    margin: 0;
+    top: 1vh;
+    left: 3vw;
 }
 
 /* RON DIGAO*/
 .project1 {
     background: url(images/ron3v.JPG) no-repeat 50% 50%;
+    float: right;
     background-size: cover;
-    left: 40%;
+    color: #bbb;
 }
 
 .project1::after {
-  
     content: "Ron Digao";
     font-family: "Roboto Mono";
     font-size: 36px;
@@ -25,19 +44,17 @@
 
 /* Advance.Sweden */
 .project2 {
-   
     background: url(images/john6.JPG) no-repeat 50% 40%;
-  
-    background-size: cover;
-    left: 5%;
+    float: left;
     color: #bbb;
+    background-size: cover;
 }
 
 .project2::after {
     content: "Advance.sweden";
     font-family: "Roboto Mono";
     font-size: 36px;
-    position: relative;
+    position: absolute;
     color: #fff;
     display: block;
     top: 60%;
@@ -50,8 +67,10 @@
 /* Indonesia */
 .project3 {
     background: url(images/indo1.jpg) no-repeat 50% 50%;
+    color: rgb(122, 122, 122);
+    float: right;
+    margin-right: 5vw;
     background-size: cover;
-    color: #444;
 }
 
 .project3::after {
@@ -60,7 +79,7 @@
     font-size: 36px;
     position: relative;
     color: #fff;
-    display: block;
+    display: absolute;
     top: 70%;
     left: -20%;
     right: 0;
@@ -70,18 +89,19 @@
 /* MUMBAI */
 .project4 {
     background: url(images/Mumbai/peeinmiants.jpg) no-repeat 50% 50%;
-    background-size: cover;
     color: #ccc;
+    float: left;
+    margin-left: 2vw;
+    background-size: cover;
 }
 
 .project4::after {
-    
     content: "Mumbai";
     font-family: "Roboto Mono";
     font-size: 36px;
     position: relative;
     color: #fff;
-    display: block;
+    display: absolute;
     top: 10%;
     left: 90%;
     right: 0;
@@ -90,8 +110,8 @@
 
 @media(max-width: 768px) {
     .project {
-          width: 90% !important;
-          margin: 14px auto;
+          width: 100% !important;
+          margin: 14px 0;
           left: 0;
           right: 0;
     }

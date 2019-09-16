@@ -1,0 +1,35 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100%;
+    font-family: "Roboto Mono";
+    background: #111;
+    color: #fff;
+}
+
+.whitespace {
+    width: 100%;
+    height: 100px;
+}
+
+@media(max-width: 768px) {
+    .whitespace {
+        display: none;
+    }
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    background-color: #111;
+    height: 80px;
+    position: fixed;
+    z-index: 1;
+}
+
+.navbar .navbar--title {
+    float: left;
+    display: block;
+}

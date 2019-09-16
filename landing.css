@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* background-color: #222;
+    color: #fff; 
+    border-color: #fff; */
+}
+
+a:hover {
+    text-decoration: none;
+}
+.lnd-hero {
+    height: 100vh;
+    width: 100%;
+    color: #222;
+   
+}
+
+.lnd-header {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding-top: 20vh;
+    justify-content: start;
+    padding-left: 10vw;
+}
+
+.line, h1 {
+    text-align: start;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: 100;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+#typewriter-hello {
+    margin-bottom: 7vh;
+}
+
+.line-one {}
+
+.line-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: -4vh;
+}
+
+.lnd-icon {
+    margin-right: 4vw;
+    margin-bottom: 5.5vh;
+    width: 40px;
+    height: 40px;
+}
+
+#lnd-icon-hand {
+    font-size: 40px;
+}
+
+.camerabackground {
+    background-image: url("https://image.flaticon.com/icons/svg/149/149100.svg");
+    background-size: cover;
+}
+
+.devbackground {
+    background-image: url("https://image.flaticon.com/icons/svg/1336/1336494.svg");
+    background-size: cover;
+}
+
+.surfbackground {
+    background-image: url("https://image.flaticon.com/icons/svg/403/403769.svg");
+    background-size: cover;
+}
+
+.add-border {
+    border-right: 2px solid rgba(0, 0, 0, 0.75);
+}
+
+.anim-typewriter-hello {
+    animation: typewriter-hello 3.3s steps(40) 1s 1 normal both, blinkTextCussor 500ms steps(40) infinite normal;
+}
+
+.anim-typewriter-one {
+    animation: typewriter-one 3.3s steps(29) 6.7s 1 normal both, blinkTextCussor 500ms steps(40) infinite normal;
+}
+
+.anim-typewriter-two {
+    animation: typewriter-two 2.3s steps(20) 12s 1 normal both, blinkTextCussor 500ms steps(40) infinite normal;
+}
+
+@keyframes typewriter-hello {
+    from {
+        width: 0;
+    }
+    to {
+        width: 9.4em;
+    }
+}
+
+@media(max-width: 768px) {
+    @keyframes typewriter-hello {
+        from {
+            width: 0;
+        }
+        to {
+            width: 11.8em;
+        }
+    }
+}
+
+@keyframes typewriter-one {
+    from {
+        width: 0;
+    }
+    to {
+        width: 12.2em;
+    }
+}
+
+@media(max-width: 768px) {
+    @keyframes typewriter-one {
+        from {
+            width: 0;
+        }
+        to {
+            width: 7.6em;
+        }
+    }
+}
+
+@keyframes typewriter-two {
+    from {
+        width: 0;
+    }
+    to {
+        width: 5.4em;
+    }
+}
+
+@media(max-width: 768px) {
+    @keyframes typewriter-two {
+        from {
+            width: 0;
+        }
+        to {
+            width: 13.2em;
+        }
+    }
+}
+
+@keyframes blinkTextCussor {
+    from {
+        border-right-color: rgba(0, 0, 0, 0.75);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}

@@ -3,11 +3,15 @@
 html, body {
     margin: 0;
     padding: 0;
-    width: 99%;
+    width: 100vw;
     height: 100%;
     font-family: "Roboto Mono" !important;
     background: #111 !important;
     color: #fff !important;
+}
+
+a {
+    text-decoration: none;
 }
 
 .whitespace {
@@ -23,85 +27,179 @@ html, body {
 
 /*--------------- typewriter effect --------------- */
 
+.lander--hero {
+    height: 100vh;
+    width: 100%;
+    color: #222;
+}
+
+.lander--hero__content {
+    padding-top: 30vh;
+    justify-content: start;
+    padding-left: 84px;
+}
+
 .line {
-    width: 24em;
-    top: 50%;
-    margin: auto;
-    border-right: 2px solid rgba(255, 255, 255, 0.75);
-    text-align: center;
+    max-width: 85vw;
+    text-align: start;
     white-space: nowrap;
     overflow: hidden;
+    font-weight: 100;
     transform: translateY(-50%);
+    font-size: 1.3em;
+    color: #fff;
 }
 
-.anim-typewriter1 {
-    animation: typewriter1 3.3s steps(40) 1s 1 normal both, blinkTextCussor 500ms steps(40) infinite normal;
-}
-
-@keyframes typewriter1 {
-    from {
-        width: 0;
-    }
-    to {
-        width: 13.2em;
+@media (max-width:1020px) {
+    .line {
+        font-size: 1.1em;
     }
 }
 
-@media(max-width: 768px) {
-    @keyframes typewriter1 {
-        from {
-            width: 0;
-        }
-        to {
-            width: 13.2em;
-        }
+@media (max-width:865px) {
+    .line {
+        font-size: 1.4em;
+        max-width: 96vw;
     }
-}
-
-.anim-typewriter2 {
-    animation: typewriter2 2.3s steps(30) 1s 1 normal both, blinkTextCussor 500ms steps(30) infinite normal;
-}
-
-@keyframes typewriter2 {
-    from {
-        width: 0;
-    }
-    to {
-        width: 9em;
+    .line-three {
+        visibility: hidden;
     }
 }
 
 @media(max-width: 768px) {
-    @keyframes typewriter2 {
-        from {
-            width: 0;
-        }
-        to {
-            width: 8em;
-        }
+    .lander--hero__content {
+        padding-left: 3vw;
+    }
+    .line {
+        font-size: calc(3.1vw);
     }
 }
 
-.anim-typewriter3 {
-    animation: typewriter3 1s steps(20) 1s 1 normal both, blinkTextCussor 500ms steps(20) infinite normal;
+/* @media(max-width:650px){
+    .line{
+        font-size: 1.2em;
+    }
+} */
+
+/* @media (max-width:375px) {
+    .line-hello {
+        font-size: 0.7em;
+    }
+    .line-one {
+        font-size: 0.9em;
+    }
+} */
+
+.line-two {}
+
+.line-three {}
+
+.line-four {}
+
+#typewriter-hello {
+    margin-bottom: 7vh;
 }
 
-@keyframes typewriter3 {
+.line-container {
+    align-items: center;
+}
+
+.add-border {
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+}
+
+.anim-typewriter-hello {
+    animation: typewriter-hello 3.3s steps(60) 1s 1 normal both, blinkTextCussor 500ms steps(40) infinite normal;
+}
+
+.anim-typewriter-one {
+    animation: typewriter-one 2.3s steps(39) 6.7s 1 normal both, blinkTextCussor 500ms steps(40) infinite normal;
+}
+
+.anim-typewriter-two {
+    animation: typewriter-two 1.8s steps(20) 12s 1 normal both, blinkTextCussor 500ms steps(40) infinite normal;
+}
+
+.anim-typewriter-three {
+    animation: typewriter-three 5.3s steps(80) 18s 1 normal both, blinkTextCussor 500ms steps(40) infinite normal;
+}
+
+@keyframes typewriter-hello {
     from {
         width: 0;
     }
     to {
-        width: 5em;
+        width: 28.4em;
     }
 }
 
 @media(max-width: 768px) {
-    @keyframes typewriter3 {
+    @keyframes typewriter-hello {
         from {
             width: 0;
         }
         to {
-            width: 13.2em;
+            width: 28.8em;
+        }
+    }
+}
+
+@keyframes typewriter-one {
+    from {
+        width: 0;
+    }
+    to {
+        width: 17.8em;
+    }
+}
+
+@media(max-width: 768px) {
+    @keyframes typewriter-one {
+        from {
+            width: 0;
+        }
+        to {
+            width: 17.8em;
+        }
+    }
+}
+
+@keyframes typewriter-two {
+    from {
+        width: 0;
+    }
+    to {
+        width: 8.3em;
+    }
+}
+
+@media(max-width: 768px) {
+    @keyframes typewriter-two {
+        from {
+            width: 0;
+        }
+        to {
+            width: 10.4em;
+        }
+    }
+}
+
+@keyframes typewriter-three {
+    from {
+        width: 0;
+    }
+    to {
+        width: 41.5em;
+    }
+}
+
+@media(max-width: 768px) {
+    @keyframes typewriter-three {
+        from {
+            width: 0;
+        }
+        to {
+            width: 47em;
         }
     }
 }
@@ -136,6 +234,7 @@ nav #brand {
 nav #brand a {
     color: #fff;
     transition: all 0.3s ease-out;
+    text-decoration: none;
 }
 
 nav #brand a:hover {
@@ -164,6 +263,7 @@ nav #menu li span {
 
 nav #menu li a {
     color: #fff;
+    text-decoration: none;
 }
 
 nav #menu li a:hover {
@@ -194,6 +294,7 @@ nav #menu li a:hover {
     top: -2px;
     line-height: 80px;
 }
+
 
 #resize {
     z-index: 1;
@@ -250,10 +351,11 @@ nav #menu li a:hover {
         visibility: visible;
         opacity: 1;
         margin-top: 6px;
-        margin-right: 4px;
+        margin-right: 8px;
+        right: 3vw;
     }
     nav #brand {
-        margin-left: 24px;
+        margin-left: 3vw;
     }
     #menu a {
         font-size: 20px;
@@ -274,27 +376,6 @@ nav #menu li a:hover {
 }
 
 /*--------------- hero section --------------- */
-
-.hero {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.hero h1 {
-    font-weight: lighter;
-    text-align: center;
-    letter-spacing: -2px;
-    line-height: 58px;
-}
-
-@media(max-width: 768px) {
-    .header h1 {
-        font-size: 26px;
-    }
-}
 
 /*--------------- scroll down icon animation --------------- */
 
@@ -346,6 +427,17 @@ h6 {
 
 /*--------------- footer section --------------- */
 
+.footer {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer--container {
+    width: 70%;
+    max-width: 1200px;
+
+}
 .collab {
     text-align: right;
 }
@@ -360,80 +452,37 @@ h6 {
     height: 1px;
 }
 
-.info h4 {
-    font-size: 18px;
-    font-weight: lighter;
+.footer--info__titles, .footer--info__content {
+    display: flex;
 }
 
-.info p {
+.footer--info__titles p:last-child, .footer--info__content h4:last-child {
+    margin-left: auto;
+}
+
+.footer--info h4 {
+    font-size: 18px;
+    font-weight: lighter;
+    margin-top: 0;
+}
+
+.footer--info p {
     color: grey;
     font-weight: lighter;
 }
 
-.info li {
+.footer--info li {
     font-weight: lighter;
     color: #fff;
     font-size: 18px;
     padding-left: 20px;
 }
 
-#fb::before {
-    display: inline-block;
-    content: '';
-    border-radius: 100%;
-    height: 4px;
-    width: 4px;
-    margin-right: 6px;
-    background: #3b5998;
-}
-
-#ig::before {
-    display: inline-block;
-    content: '';
-    border-radius: 100%;
-    height: 4px;
-    width: 4px;
-    margin-right: 6px;
-    background: #fcaf45;
-}
-
-#tw::before {
-    display: inline-block;
-    content: '';
-    border-radius: 100%;
-    height: 4px;
-    width: 4px;
-    margin-right: 6px;
-    background: #55acee;
-}
-
-#yt::before {
-    display: inline-block;
-    content: '';
-    border-radius: 100%;
-    height: 4px;
-    width: 4px;
-    margin-right: 6px;
-    background: #c4302b;
-}
-
-#media, #address {
-    text-align: right;
-}
-
-#media ul {
-    list-style: none;
-}
-
-#media ul li {
-    display: inline-block;
-}
-
 @media(max-width: 768px) {
     .collab, #personal, #media, #address {
         text-align: center;
     }
-    .info ul {
+    .footer--info ul {
         margin: 0 0 0 -22px;
         padding: 0;
     }
@@ -465,9 +514,13 @@ h6 {
 
 /*---------------about page --------------- */
 
+.about--hero-content {
+    margin-left: 82px;
+}
+
 .about {
     height: 500px;
-    margin-top: 120px;
+    padding-top: 120px;
 }
 
 .appeard-in p {
@@ -482,9 +535,20 @@ h6 {
 
 /*--------------- contact form --------------- */
 
-#contact-form {
-    margin: 5% 1.4%;
+.contact--container, .container-fluid {
+margin: 0 15%;
+max-width: 1200px;
 }
+.contact--container {
+    padding-bottom: 5vh;
+}
+
+
+.contact-form, .contact-form  ul {
+    margin: 0;
+    padding: 0;
+}
+
 
 #contact-form ul {
     list-style: none;
@@ -493,7 +557,7 @@ h6 {
 }
 
 #contact-form li {
-    padding: 10px;
+    padding: 10px 0;
 }
 
 #contact-form li:last-of-type {
